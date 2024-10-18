@@ -128,3 +128,17 @@ h2 {
 .task-container li {
     animation: fadeIn 0.3s;
 }
+.task-container li .edit-btn {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Memberikan sedikit jarak antar tombol */
+}
+
+.task-container li .edit-btn:hover {
+    background-color: #ff8c00;
+}
