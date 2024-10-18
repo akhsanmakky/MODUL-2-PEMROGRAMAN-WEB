@@ -1,35 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator Aksan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Manajer Tugas Harian</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display" id="display"></div>
-        <div class="buttons">
-            <button class="all-clear" value="AC">AC</button>
-            <button value="7">7</button>
-            <button value="8">8</button>
-            <button value="9">9</button>
-            <button class="operator" value="/">:</button>
-            <button value="4">4</button>
-            <button value="5">5</button>
-            <button value="6">6</button>
-            <button class="operator" value="*">x</button>
-            <button value="1">1</button>
-            <button value="2">2</button>
-            <button value="3">3</button>
-            <button class="operator" value="-">-</button>
-            <button value="0">0</button>
-            <button value=".">.</button>
-            <button class="equal" value="=">=</button>
-            <button class="operator" value="+">+</button>
-        </div>
+
+    <div class="task-container">
+        <h1>TUGAS YANG HARUS DIKERJAKAN</h1>
+        <h2>Semester 5 Prodi Informatika</h2>
+        <input type="text" id="task-input" placeholder="Tambahkan tugas di sini...">
+        <button id="add-btn">Tambah</button>
+        <ul id="task-list">
+            <!-- Daftar tugas akan ditambahkan di sini -->
+        </ul>
     </div>
-    
-    <script src="script.js"></script>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,130 @@
+/* Gaya umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2f3640;
+    margin-bottom: 5px;
+    font-size: medium;
+    
+}
+h2 {
+    text-align: center;
+    color: #2f3640;
+    margin-bottom: 5px;
+    font-size: small;
+}
+.task-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input dan Tombol */
+.task-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.task-container input:focus {
+    border-color: #00a8ff;
+}
+
+.task-container button {
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.task-container button:hover {
+    background-color: #007bb5;
+}
+
+/* Daftar Tugas */
+.task-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.task-container li {
+    background-color: #f1f2f6;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.task-container li:hover {
+    background-color: #dcdde1;
+}
+
+.task-container li span {
+    flex-grow: 1;
+    margin-right: 15px;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.task-container li .delete-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    size: 5px;
+}
+
+.task-container li .delete-btn:hover {
+    background-color: #e84118;
+}
+
+/* Teks tugas selesai */
+.task-container li .completed {
+    text-decoration: line-through;
+    color: #000000;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.task-container li {
+    animation: fadeIn 0.3s;
+}
